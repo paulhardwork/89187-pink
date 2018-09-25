@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Ярин](https://up.htmlacademy.ru/adaptive/15/user/89187).
-* Наставник: `Неизвестно`.
+* Наставник: [Влад Слепкан](https://up.htmlacademy.ru/adaptive/15/user/383197).
 
 ---
 
