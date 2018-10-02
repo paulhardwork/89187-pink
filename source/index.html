@@ -5,8 +5,141 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo.svg" alt="Пинк" width="75" height="22">
+      </a>
+      <nav class="main-menu">
+        <button class="main-menu__open" type="button">Открыть меню</button>
+        <ul class="main-menu__list">
+          <li class="main-menu__item main-menu__item--active"><a href="index.html">Главная</a></li>
+          <li class="main-menu__item"><a href="news.html">Новости</a></li>
+          <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-menu__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <h1 class="page-header__title visually-hidden">Мобильное приложение "Пинк"</h1>
+      <div class="platforms">
+        <a class="button platforms__download" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+        <div class="platfroms__links-wrapper">
+          <a class="platforms__link" href="https://www.apple.com/ru/itunes/"><img src="img/apple-logo.svg" alt="Скачать для iOS" width="47" height="56"></a>
+          <a class="platforms__link" href="https://play.google.com/store/apps?hl=ru"><img src="img/android-logo.svg" alt="Скачать для Android" width="43" height="47"></a>
+          <a class="platforms__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone"><img src="img/microsoft-logo.svg" alt="Скачать для Windows Phone" width="44" height="41"></a>
+        </div>
+        <p class="platforms__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+    <main class="page-content">
+      <p class="page-content__text">Устали от серости мегаполиса?</p>
+      <p class="page-content__offer">Нам есть, что вам предложить!</p>
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества приложения</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__item-header">Поднимает настроение</h3>
+            <p class="features__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-header">Меняет мир вокруг</h3>
+            <p class="features__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-header">Заводит новых друзей</h3>
+            <p class="features__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
 
+      <section class="feedbacks slider">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="feedbacks__list slider__list">
+          <blockquote class="feedbacks__item slider__item">
+            <cite class="feedbacks__author">Николай Петров</cite>
+            <p class="feedbacks__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="feedbacks__item slider__item">
+            <cite class="feedbacks__author"></cite>
+              <p class="feedbacks__content"></p>
+          </blockquote>
+          <blockquote class="feedbacks__item slider__item">
+            <cite class="feedbacks__author"></cite>
+            <p class="feedbacks__content"></p>
+          </blockquote>
+          <div class="feedbacks__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="tarifs slider">
+        <h2 class="visually-hidden">Тарифы использования</h2>
+        <ul class="tarifs__list slider__list">
+          <li class="tarifs__item slider__item">
+            <div class="tarifs__header">
+              <b class="tarifs__title">Стандарт</b>
+              <span class="tarifs__price">3,99 USD</span>
+            </div>
+            <table class="tarifs__features">
+              <tr>
+                <td class="tarifs__advantage">Розовый фильтр</td>
+                <td class="tarifs__onoff"><img src="img/yes.svg" alt="Включено" width="31" height="21"></td>
+              </tr>
+              <tr>
+                <td class="tarifs__advantage">Смайлики</td>
+                <td class="tarifs__onoff"><img src="img/yes.svg" alt="Включено" width="31" height="21"></td>
+              </tr>
+              <tr>
+                <td class="tarifs__advantage">Комментарии</td>
+                <td class="tarifs__onoff"><img src="img/no.svg" alt="Отсутствует" width="27" height="26"></td>
+              </tr>
+            </table>
+          </li>
+          <li class="tarifs__item slider__item"></li>
+          <li class="tarifs__item slider__item"></li>
+        </ul>
+        <div class="tarifs__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <ul class="contacts__variants">
+          <li class="contacts__method">
+            <b class="contacts__method-text">Звоните:</b>
+            <span class="contacts__address">+7 (812) 555-66-66</span>
+          </li>
+          <li class="contacts__method">
+            <b class="contacts__method-text">Пишите:</b>
+            <span class="contacts__address">mail@htmlacademy.ru</span></li>
+          <li class="contacts__method">
+            <b class="contacts__method-text">Приезжайте в гости:</b>
+            <span class="contacts__address">ул. Большая Конюшенная, 19/8</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="map">
+        <img src="img/map.png" alt="Интерактивная карта">
+      </section>
+
+      <footer class="page-footer">
+        <img class="logo page-footer__image" src="img/logo.svg" alt="Пинк" width="75" height="22">
+        <div class="page-footer__socials">
+          <a class="page-footer__social-btn page-footer__social-btn--twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+          <a class="page-footer__social-btn page-footer__social-btn--fb" href="#"><span class="visually-hidden">Facebook</span></a>
+          <a class="page-footer__social-btn page-footer__social-btn--youtube" href="#"><span class="visually-hidden">Youtube</span></a>
+        </div>
+        <div class="page-footer__copyright">
+          Разработано
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__creator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg></a>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
