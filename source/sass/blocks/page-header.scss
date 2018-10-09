@@ -6,8 +6,48 @@
   background-repeat: no-repeat;
 }
 
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 22px;
+  padding-bottom: 26px;
+  background-color: $bluelight;
+}
+
 .page-header__title {
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    padding-top: 27px;
+    padding-bottom: 41px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    @include desktop-center;
+    background-image: none;
+  }
+
+  .page-header__wrapper {
+    align-items: center;
+    width: 150px;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .page-header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 110px;
+  }
 }
