@@ -13,27 +13,27 @@
 
 .main-menu__item a {
   display: block;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 16px 70px;
   text-align: center;
+  cursor: pointer;
 }
 
-@media (min-width: $desktop-width) {
-  .main-menu {
-    width: 620px;
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 18px;
-    text-transform: none;
-    background-color: transparent;
-  }
+// @media (min-width: $desktop-width) {
+//   .main-menu {
+//     width: 620px;
+//     font-size: 18px;
+//     font-weight: normal;
+//     line-height: 18px;
+//     text-transform: none;
+//     background-color: transparent;
+//   }
 
-  .main-menu__list {
-    display: flex;
-    justify-content: space-between;
-  }
+//   .main-menu__list {
+//     display: flex;
+//     justify-content: space-between;
+//   }
 
-  .main-menu__open {
-    display: none;
-  }
-}
+//   .main-menu__open {
+//     display: none;
+//   }
+// }
