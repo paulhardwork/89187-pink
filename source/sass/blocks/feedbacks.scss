@@ -1,7 +1,38 @@
+.feedbacks {
+  @include mobile-center;
+  padding-top: 48px;
+}
+
+.feedbacks__item {
+  margin: 0;
+  padding: 0;
+}
+
 .feedbacks__author {
+  display: block;
+  width: 155px;
+  margin: 0 auto;
+  margin-bottom: 16px;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
   line-height: 24px;
   color: #000000;
+}
+
+.feedbacks__infoauthor {
+  display: none;
+}
+
+.feedbacks__content {
+  width: 280px;
+  margin: 0;
+  margin-bottom: 33px;
+  text-align: center;
+}
+
+.feedbacks__toggles {
+  width: 62px;
+  margin: 0 auto;
+  margin-bottom: 41px;
 }
