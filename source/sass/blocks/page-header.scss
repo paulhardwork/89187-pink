@@ -1,8 +1,10 @@
 .page-header {
   background-color: $bluelight;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../../img/iphone-hand-mobile@1x.png"),
+    url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: left top 436px,
+    center top 263px;
 }
 
 .page-header__logo {
@@ -20,7 +22,6 @@
 
 .page-header__top {
   margin-bottom: 395px;
-  background-color: rgba(#000000, 0.3);
 }
 
 .page-header__title {
