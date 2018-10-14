@@ -1,5 +1,53 @@
+.userphotos {
+  padding-top: 46px;
+}
+
+.userphotos__title {
+  margin-bottom: 48px;
+}
+
+.userphotos__desc {
+  width: 245px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.userphotos__list {
+  @include reset-list;
+}
+
+.userphotos__item {
+  @include mobile-center;
+  background-color: #ffffff;
+}
+
+.userphotos__photo {
+  display: block;
+  width: 280px;
+  height: 180px;
+}
+
 .userphotos__info {
+  display: block;
+  margin: 0;
   background-color: #f2f2f2;
+}
+
+.userphotos__item--photoofday {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.userphotos__item--photoofday .userphotos__photo {
+  width: 320px;
+  height: 137px;
+}
+
+.userphotos__item--photoofday .userphotos__info {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .userphotos__author {
