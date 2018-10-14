@@ -26,9 +26,26 @@
 }
 
 .page-header__title {
+  width: 180px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 32px;
+  padding-bottom: 84px;
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
+  text-align: center;
+}
+
+.page-header--notmain {
+  background-color: $bluelight;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top 263px;
+}
+
+.page-header--notmain .page-header__top {
+  margin-bottom: 0;
 }
 
 // @media (min-width: $tablet-width) {
