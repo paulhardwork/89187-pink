@@ -81,10 +81,11 @@
 
   .page-header__top {
     display: flex;
-    @include desktop-center;
     justify-content: space-between;
     align-items: center;
-    min-height: 110px;
 
+    @include desktop-center;
+    min-height: 110px;
+    margin-bottom: 116px;
   }
 }

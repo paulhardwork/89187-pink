@@ -31,3 +31,26 @@
   margin-left: 25px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .platforms {
+    width: 620px;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .platforms__slogan {
+    display: block;
+  }
+
+  .platforms__download {
+    width: 220px;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .platforms {
+    width: 880px;
+  }
+}

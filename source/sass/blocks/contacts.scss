@@ -33,3 +33,84 @@
   font-weight: 300;
   color: $pinktext;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 52px;
+    padding-bottom: 26px;
+  }
+
+  .contacts__title {
+    width: 380px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .contacts__variants {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include tablet-center;
+  }
+
+  .contacts__method {
+    margin: 0;
+
+    &--telephone {
+      width: 207px;
+      margin-left: 40px;
+      margin-right: 99px;
+    }
+
+    &--email {
+      width: 250px;
+    }
+
+    &--office {
+      width: 220px;
+      margin-top: 42px;
+      margin-left: 200px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    @include desktop-center;
+    padding-top: 70px;
+    padding-bottom: 22px;
+  }
+
+  .contacts__title {
+    width: 475px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .contacts__variants {
+    width: 860px;
+    margin: 0;
+    padding: 0;
+    margin-left: 48px;
+    margin-right: 29px;
+  }
+
+  .contacts__method {
+    &--telephone {
+      margin-left: 0;
+      margin-right: 115px;
+    }
+
+    &--email {
+      order: 3;
+    }
+
+    &--office {
+      width: 220px;
+      margin-right: 68px;
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+
+}
