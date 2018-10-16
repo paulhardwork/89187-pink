@@ -1,0 +1,34 @@
+.investigation {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .investigation {
+    display: block;
+    background-color: #ffffff;
+  }
+
+  .investigation__wrapper {
+    @include tablet-center;
+    width: 285px;
+    padding-left: 320px;
+    padding-right: 15px;
+    padding-top: 99px;
+    padding-bottom: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .investigation {
+    background-color: #f2f2f2;
+  }
+
+  .investigation__wrapper {
+    @include desktop-center;
+    width: 525px;
+    padding-left: 370px;
+    padding-right: 49px;
+    padding-top: 159px;
+    padding-bottom: 110px;
+  }
+}
