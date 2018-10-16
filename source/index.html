@@ -37,10 +37,10 @@
       </div>
     </header>
 
-    <main class="page-content">
+    <header class="page-content">
       <div class="page-content__wrapper">
         <p class="page-content__text">Устали от серости мегаполиса?</p>
-        <p class="page-content__text">Нам есть, что вам предложить!</p>
+        <p class="page-content__text page-content__text--notmobile">Нам есть, что вам предложить!</p>
       </div>
       <section class="features">
         <h2 class="visually-hidden">Преимущества приложения</h2>
@@ -58,10 +58,13 @@
             <p class="features__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <div class="features__addition">
-          <h3 class="features__addition-header">Эффект на 24 часа!</h3>
-          <p class="features__addition-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="features__addition-link" href="#">Узнать больше об исследовании</a>
+      </section>
+
+      <section class="investigation">
+        <div class="investigation__wrapper">
+          <header class="investigation__header">Эффект на 24 часа!</header>
+          <p class="investigation__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="investigation__link" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
 
@@ -101,11 +104,13 @@
         <h2 class="visually-hidden">Тарифы использования</h2>
         <table class="tarifs__list">
           <th>
+            <td class="tarifs__empty"></td>
             <td class="tarifs__header">База <span class="tarifs__price">1,99 USD</span></td>
             <td class="tarifs__header">Стандарт <span class="tarifs__price">3,99 USD</span></td>
             <td class="tarifs__header">Анлим <span class="tarifs__price">9,99 USD</span></td>
           </th>
           <tr>
+            <td class="tarifs__advantage tarifs__advantage--desktop">Розовый фильтр</td>
             <td class="tarifs__advantage">Розовый фильтр</td>
             <td class="tarifs__onoff"><img src="img/icon-yes.svg" alt="Включено" width="31" height="21"></td>
             <td class="tarifs__advantage">Розовый фильтр</td>
@@ -114,6 +119,7 @@
             <td class="tarifs__onoff"><img src="img/icon-yes.svg" alt="Включено" width="31" height="21"></td>
           </tr>
           <tr>
+            <td class="tarifs__advantage tarifs__advantage--desktop">Смайлики</td>
             <td class="tarifs__advantage">Смайлики</td>
             <td class="tarifs__onoff"><img src="img/icon-no.svg" alt="Отсутствует" width="27" height="26"></td>
             <td class="tarifs__advantage">Смайлики</td>
@@ -122,6 +128,7 @@
             <td class="tarifs__onoff"><img src="img/icon-yes.svg" alt="Включено" width="31" height="21"></td>
           </tr>
           <tr>
+            <td class="tarifs__advantage tarifs__advantage--desktop">Комментарии</td>
             <td class="tarifs__advantage">Комментарии</td>
             <td class="tarifs__onoff"><img src="img/icon-no.svg" alt="Отсутствует" width="27" height="26"></td>
             <td class="tarifs__advantage">Комментарии</td>
@@ -140,14 +147,14 @@
       <section class="contacts">
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <ul class="contacts__variants">
-          <li class="contacts__method">
+          <li class="contacts__method contacts__method--telephone">
             <b class="contacts__method-text">Звоните:</b>
             <span class="contacts__address">+7 (812) 555-66-66</span>
           </li>
-          <li class="contacts__method">
+          <li class="contacts__method contacts__method--email">
             <b class="contacts__method-text">Пишите:</b>
             <span class="contacts__address">mail@htmlacademy.ru</span></li>
-          <li class="contacts__method">
+          <li class="contacts__method contacts__method--office">
             <b class="contacts__method-text">Приезжайте в гости:</b>
             <span class="contacts__address">ул. Большая Конюшенная, 19/8</span>
           </li>
@@ -170,6 +177,6 @@
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__creator"></a>
         </div>
       </footer>
-    </main>
+    </header>
   </body>
 </html>
