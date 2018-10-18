@@ -1,5 +1,6 @@
 .userphotos {
   padding-top: 46px;
+  padding-bottom: 41px;
 }
 
 .userphotos__title {
@@ -12,6 +13,24 @@
   text-align: center;
 }
 
+.userphotos__panorama {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+// .userphotos__panorama-photo {
+//   display: block;
+//   width: 320px;
+//   height: 137px;
+//   margin-left: -20px;
+// }
+
+// .userphotos__panorama-photo img {
+//   width: 320px;
+//   height: 137px;
+// }
+
 .userphotos__list {
   @include reset-list;
 }
@@ -19,6 +38,10 @@
 .userphotos__item {
   @include mobile-center;
   background-color: #ffffff;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .userphotos__photo {
@@ -49,3 +72,105 @@
   color: $pinktext;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .userphotos {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
+
+  .userphotos__title {
+    margin-bottom: 74px;
+  }
+
+  .userphotos__desc {
+    width: 440px;
+    font-size: 18px;
+  }
+
+  .userphotos__panorama {
+    width: 620px;
+  }
+
+  // .userphotos__panorama-photo {
+  //   width: 660px;
+  //   height: 509px;
+  //   margin-left: -20px;
+  // }
+
+  // .userphotos__panorama-photo img {
+  //   width: 660px;
+  //   height: 509px;
+  // }
+
+  .userphotos__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include tablet-center;
+  }
+
+  .userphotos__item {
+    width: 300px;
+    min-height: 455px;
+    margin: 0;
+    padding: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 20px;
+    }
+  }
+
+  .userphotos__photo {
+    display: block;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .userphotos__title {
+    margin-bottom: 86px;
+  }
+
+  .userphotos__desc {
+    width: 570px;
+  }
+
+  .userphotos__panorama {
+    width: 940px;
+  }
+
+  // .userphotos__panorama-photo {
+  //   width: 1200px;
+  //   height: 506px;
+  //   margin-left: -130px;
+  // }
+
+  // .userphotos__panorama-photo img {
+  //   width: 1200px;
+  //   height: 506px;
+  // }
+
+  .userphotos__list {
+    @include desktop-center;
+  }
+
+  .userphotos__item {
+    min-height: 555px;
+    margin-right: 20px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .userphotos__photo {
+    height: 400px;
+  }
+}
+

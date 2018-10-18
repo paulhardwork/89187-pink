@@ -1,10 +1,21 @@
-.story__sign-text {
-  color: $pinktext;
-  text-transform: uppercase;
+.story {
+  padding-top: 46px;
+  padding-bottom: 16px;
+}
+
+.story__promo {
+  @include mobile-center;
+  text-align: center;
 }
 
 .story__field {
-  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.story__sign-text {
+  color: $pinktext;
+  text-transform: uppercase;
 }
 
 .story__notice {
@@ -13,4 +24,129 @@
 
 .story__top-symbol {
   color: $pinktext;
+}
+
+@media (max-width: 659px) {
+  .story__wrapper {
+    @include mobile-center;
+  }
+
+  .story__field {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #f2f2f2;
+  }
+
+  .story__field--emotions,
+  .story__field--contacts {
+    background-color: #ffffff;
+  }
+
+  .story__field--contacts {
+    @include mobile-center;
+  }
+
+  .story__field--emotions {
+    @include mobile-center;
+  }
+
+  .story__sign-text--forlegend {
+    display: block;
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+
+  .story__sign-text--contacts {
+    display: none;
+  }
+
+  .story__sign-wrapper {
+    display: block;
+    width: 217px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .story__container {
+    @include mobile-center;
+  }
+
+  .story__hiddentext {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .story__form {
+    display: flex;
+    flex-direction: column;
+    @include tablet-center;
+  }
+
+  .story__wrapper {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .story__container {
+    display: flex;
+
+    @include tablet-center;
+  }
+
+
+  .story__field {
+    border: 2px solid #e5e5e5;
+  }
+
+  .story__field--travelapp {
+    order: 2;
+  }
+
+  .story__field--contacts {
+    order: 3;
+  }
+
+  .story__field--achieves {
+    order: 4;
+  }
+
+  .story__field--emotions {
+    order: 5;
+  }
+
+  .story__container {
+    display: flex;
+    order: 6;
+
+    @include tablet-center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .story__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @include desktop-center;
+  }
+
+  .story__field {
+    width: 940px;
+  }
+
+  .story__userinfo {
+    width: 433px;
+    margin-right: 70px;
+  }
+
+  .story__field--travelapp {
+    width: 431px;
+  }
+
+  .story__container {
+    @include desktop-center;
+  }
 }
