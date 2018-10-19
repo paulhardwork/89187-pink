@@ -4,52 +4,77 @@
   background-color: #f2f2f2;
 }
 
-// .tarifs__header {
-//   padding-top: 17px;
-//   padding-bottom: 18px;
-//   background-color: $bluelight;
-//   text-align: center;
-// }
+.tarifs__wrapper {
+  @include mobile-center;
+  overflow: scroll;
+}
 
-// .tarifs__title {
-//   margin-bottom: 3px;
-//   font-size: 18px;
-//   font-weight: bold;
-//   color: #ffffff;
-//   text-transform: uppercase;
-// }
+.tarifs__list {
+  width: 840px;
+  border-collapse: collapse;
+}
 
-// .tarifs__price {
-//   display: block;
-//   font-size: 24px;
-//   font-weight: 300;
-//   color: #ffffff;
-// }
+.tarifs__toggles {
+  width: 62px;
+  margin: 0 auto;
+}
 
-// .tarifs__features {
-//   width: 100%;
-//   margin-bottom: 44px;
-//   border-collapse: collapse;
-// }
+.tarifs__empty {
+  display: none;
+}
 
-// .tarifs__features tr {
-//   border: 2px solid #e5e5e5;
-// }
+.tarifs__advantage--desktop {
+  display: none;
+}
 
-// .tarifs__advantage {
-//   padding-left: 22px;
-//   padding-right: 22px;
-//   padding-top: 14px;
-//   padding-bottom: 15px;
-//   text-transform: uppercase;
-// }
+.tarifs__title {
+  margin-bottom: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
 
-// .tarifs__onoff {
-//   padding-right: 21px;
-//   text-align: right;
-// }
+.tarifs__price {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
 
-// .tarifs__toggles {
-//   width: 62px;
-//   margin: 0 auto;
-// }
+@media (min-width: $tablet-width) {
+  .tarifs__wrapper {
+    @include tablet-center;
+    overflow: auto;
+  }
+
+  .tarifs__list {
+    width: 620px;
+  }
+
+  .tarifs__toggles {
+    display: none;
+  }
+
+  .tarifs__empty {
+    display: table-cell;
+  }
+
+  .tarifs__advantage {
+    display: none;
+  }
+
+  .tarifs__advantage--desktop {
+    display: table-cell;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tarifs__wrapper {
+    @include desktop-center;
+  }
+
+  .tarifs__list {
+    width: 940px;
+  }
+}

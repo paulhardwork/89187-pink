@@ -34,6 +34,7 @@
 
   .page-footer {
     display: flex;
+
     @include tablet-center;
     padding-top: 36px;
     padding-bottom: 39px;

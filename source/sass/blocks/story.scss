@@ -81,6 +81,7 @@
   .story__form {
     display: flex;
     flex-direction: column;
+
     @include tablet-center;
   }
 
@@ -89,13 +90,6 @@
     margin: 0;
     padding: 0;
   }
-
-  .story__container {
-    display: flex;
-
-    @include tablet-center;
-  }
-
 
   .story__field {
     border: 2px solid #e5e5e5;
