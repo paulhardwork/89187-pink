@@ -1,4 +1,44 @@
+.yourphoto__title {
+  margin-bottom: 40px;
+}
+
+.yourphoto__desc {
+  width: 260px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.yourphoto__settings {
+  background-color: #f2f2f2;
+}
+
+.yourphoto__settings-wrapper {
+  @include mobile-center;
+}
+
+.yourphoto__image {
+  width: 280px;
+  height: 374px;
+  margin-bottom: 42px;
+}
+
+.yourphoto__tools {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.yourphoto__item {
+  margin: 0;
+  padding: 0;
+}
+
+.yourphoto__range {
+  display: none;
+}
+
 .yourphoto__post {
+  width: 280px;
   font-size: 18px;
   font-weight: bold;
   line-height: 18px;
@@ -7,9 +47,54 @@
 }
 
 .yourphoto__cancel {
+  width: 280px;
   font-size: 18px;
   font-weight: bold;
   line-height: 18px;
-  color: #ffffff;
+  color: rgba($bluelight, 0.1);
   background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .yourphoto__title {
+    margin-bottom: 66px;
+  }
+
+  .yourphoto__desc {
+    width: 425px;
+    font-size: 18px;
+  }
+
+  .yourphoto__settings-wrapper {
+    display: flex;
+
+    @include tablet-center;
+  }
+
+  .yourphoto__image {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 0;
+    margin-right: 48px;
+  }
+
+  .yourphoto__tools {
+    width: 275px;
+  }
+
+  .yourphoto__post,
+  .yourphoto__cancel {
+    width: 260px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .yourphoto__settings {
+    @include desktop-center;
+  }
+
+  .yourphoto__settings-wrapper {
+    width: 810px;
+    padding: 0;
+  }
 }

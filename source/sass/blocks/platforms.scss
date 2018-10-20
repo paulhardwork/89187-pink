@@ -1,6 +1,56 @@
 .platforms {
-  font-weight: lighter;
+  @include mobile-center;
+  padding-top: 28px;
+  padding-bottom: 30px;
+  font-weight: 300;
   line-height: 24px;
   color: #ffffff;
   background-color: $bluedark;
+}
+
+.platforms__slogan {
+  display: none;
+}
+
+.platforms__download {
+  margin-bottom: 32px;
+}
+
+.platforms__links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205px;
+  height: 56px;
+  margin-bottom: 28px;
+  margin-left: 37px;
+}
+
+.platforms__desc {
+  width: 240px;
+  margin-left: 25px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .platforms {
+    width: 620px;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .platforms__slogan {
+    display: block;
+  }
+
+  .platforms__download {
+    width: 220px;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .platforms {
+    width: 880px;
+  }
 }
