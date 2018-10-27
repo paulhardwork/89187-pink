@@ -18,18 +18,6 @@ body {
   color: #283645;
 }
 
-@media (min-width: $tablet-width) {
-  body {
-    min-width: $tablet-width;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    min-width: $desktop-width;
-  }
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
