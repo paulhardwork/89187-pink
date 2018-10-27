@@ -1,0 +1,41 @@
+.slider__toggles {
+  width: 62px;
+}
+
+.slider__toggle {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 16px;
+  padding: 0;
+  background-color: $bluelight;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.3;
+
+  &:last-child {
+    margin-right: -2px;
+  }
+
+  &--active {
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+    background-color: #ffffff;
+    border: 3px solid $bluelight;
+    opacity: 1;
+  }
+}
+
+.slider__toggle--desktop {
+  display: block;
+  width: 23px;
+  height: 42px;
+  margin: 0;
+  background-color: #ffffff;
+  border-radius: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
