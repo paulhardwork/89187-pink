@@ -4,31 +4,96 @@
 
 @media (min-width: $tablet-width) {
   .investigation {
+    position: relative;
     display: block;
     background-color: #ffffff;
+
+    &::before {
+      content: "24";
+      position: absolute;
+      top: 59px;
+      left: 20px;
+      width: 238px;
+      height: 276px;
+      font-size: 96px;
+      font-weight: bold;
+      line-height: 300px;
+      color: $pinktext;
+      text-align: center;
+      background-image: url("../../img/icon-editor-diagram-fill.svg"),
+        url("../../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 75%, 0 0;
+      background-size: 202px 202px, 238px 276px;
+    }
   }
 
   .investigation__wrapper {
     @include tablet-center;
-    width: 285px;
-    padding-left: 320px;
+    width: 296px;
+    padding-left: 306px;
     padding-right: 15px;
     padding-top: 99px;
     padding-bottom: 26px;
+  }
+
+  .investigation__header {
+    width: 170px;
+    margin-bottom: 7px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+  }
+
+  .investigation__text {
+    margin: 0;
+    margin-bottom: 8px;
+    line-height: 24px;
+  }
+
+  .investigation__link {
+    color: $pinktext;
+    text-decoration: underline;
   }
 }
 
 @media (min-width: $desktop-width) {
   .investigation {
     background-color: #f2f2f2;
+
+    &::before {
+      top: 65px;
+      left: 130px;
+      width: 298px;
+      height: 345px;
+      font-size: 120px;
+      line-height: 380px;
+      background-size: 253px 253px, 298px 345px;
+    }
   }
 
   .investigation__wrapper {
     @include desktop-center;
-    width: 525px;
-    padding-left: 370px;
+    width: 526px;
+    padding-left: 363px;
     padding-right: 49px;
     padding-top: 159px;
-    padding-bottom: 110px;
+    padding-bottom: 113px;
+  }
+
+  .investigation__header {
+    width: 300px;
+    margin-bottom: 22px;
+    letter-spacing: 1px;
+  }
+
+  .investigation__text {
+    margin-bottom: 27px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .investigation__link {
+    font-size: 18px;
   }
 }

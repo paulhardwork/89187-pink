@@ -1,12 +1,12 @@
 .contacts {
-  padding-top: 47px;
-  padding-bottom: 35px;
+  padding-top: 42px;
+  padding-bottom: 22px;
 }
 
 .contacts__title {
   width: 228px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
@@ -19,7 +19,7 @@
 }
 
 .contacts__method {
-  margin-bottom: 19px;
+  margin-bottom: 15px;
 }
 
 .contacts__method-text {
@@ -36,12 +36,13 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-top: 52px;
+    padding-top: 47px;
     padding-bottom: 26px;
   }
 
   .contacts__title {
     width: 380px;
+    margin-bottom: 40px;
     font-size: 40px;
     line-height: 48px;
   }
@@ -77,12 +78,13 @@
 @media (min-width: $desktop-width) {
   .contacts {
     @include desktop-center;
-    padding-top: 70px;
+    padding-top: 66px;
     padding-bottom: 22px;
   }
 
   .contacts__title {
     width: 475px;
+    margin-bottom: 51px;
     font-size: 50px;
     line-height: 60px;
   }

@@ -1,4 +1,5 @@
 .main-menu {
+  position: relative;
   width: 100%;
   font-size: 18px;
   font-weight: bold;
@@ -6,6 +7,18 @@
   color: #ffffff;
   text-transform: uppercase;
   background-color: $bluelight;
+}
+
+.main-menu__toggle {
+  position: absolute;
+  top: -49px;
+  right: 5.94%;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../../img/icon-menu-cross.svg");
+  border: none;
 }
 
 .main-menu__list {
@@ -17,18 +30,34 @@
   padding: 16px 70px;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0 1px 0 #000000,
-    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 -1px 0 #000000;
+}
+
+.main-menu__item:last-child {
+  box-shadow: 0 1px 0 #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .main-menu__toggle {
+    top: -62px;
+    right: 2.94%;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-menu {
     width: 620px;
+    margin-top: 45px;
     font-size: 18px;
     font-weight: normal;
     line-height: 18px;
     text-transform: none;
     background-color: transparent;
+  }
+
+  .main-menu__toggle {
+    display: none;
   }
 
   .main-menu__list {
@@ -40,9 +69,5 @@
   .main-menu__item a {
     padding: 0;
     box-shadow: none;
-  }
-
-  .main-menu__toggle {
-    display: none;
   }
 }

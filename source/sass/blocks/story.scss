@@ -11,19 +11,157 @@
 .story__field {
   margin: 0;
   padding: 0;
+
+  &--achieves {
+    background-color: #f2f2f2;
+  }
+
+  &--contacts {
+    @include mobile-center;
+    padding-top: 30px;
+    padding-bottom: 42px;
+    background-color: #ffffff;
+  }
+
+  &--emotions {
+    @include mobile-center;
+    background-color: #ffffff;
+    margin-bottom: 38px;
+  }
+
+  &--travelapp {
+    background-color: #f2f2f2;
+  }
+}
+
+.story__formfield {
+  width: 236px;
+  padding-top: 21px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+
+  &--textarea {
+    height: 180px;
+    padding-top: 13px;
+    padding-bottom: 4px;
+    line-height: 30px;
+    resize: none;
+  }
 }
 
 .story__sign-text {
+  display: block;
+  margin-left: 21px;
+  margin-bottom: 4px;
   color: $pinktext;
   text-transform: uppercase;
 }
 
+.story__userinfo p {
+  margin: 0;
+  margin-bottom: 17px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.story__checkitem {
+  position: relative;
+  margin: 0;
+  margin-bottom: 44px;
+  padding-left: 68px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  font-size: 18px;
+
+  &--radio {
+    margin-bottom: 36px;
+    padding-bottom: 2px;
+  }
+
+  &--radio:last-child {
+    margin-bottom: 48px;
+  }
+}
+
+.story__checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.story__checkbox:checked + label .story__checkbox-indicator {
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.story__contacts-block {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
+}
+
+.story__radio-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.story__checkbox:checked + label .story__radio-indicator {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: $pinktext;
+    border-radius: 50%;
+  }
+}
+
+.story__button {
+  width: 280px;
+  min-height: 63px;
+  margin-bottom: 34px;
+  padding-left: 39px;
+  padding-right: 40px;
+  padding-top: 19px;
+  padding-bottom: 20px;
+  border: 2px solid #2aab6d;
+  border-radius: 2px;
+}
+
 .story__notice {
+  width: 185px;
+  margin: 0 auto;
   text-transform: uppercase;
 }
 
 .story__top-symbol {
   color: $pinktext;
+}
+
+.story__hiddentext--footer {
+  display: none;
 }
 
 @media (max-width: 659px) {
@@ -32,40 +170,40 @@
   }
 
   .story__field {
-    margin: 0;
-    padding: 0;
     border: none;
-    background-color: #f2f2f2;
   }
 
-  .story__field--emotions,
-  .story__field--contacts {
-    background-color: #ffffff;
-  }
-
-  .story__field--contacts {
-    @include mobile-center;
-  }
-
-  .story__field--emotions {
-    @include mobile-center;
+  .story__userinfo {
+    padding-top: 35px;
+    padding-bottom: 42px;
   }
 
   .story__sign-text--forlegend {
     display: block;
     width: 100%;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: #f2f2f2;
   }
 
-  .story__sign-text--contacts {
+  .story__sign-text--foremotions {
+    width: 185px;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 10px;
+  }
+
+  .story__sign-text--forcontacts {
     display: none;
   }
 
   .story__sign-wrapper {
     display: block;
-    width: 217px;
+    width: 218px;
     margin: 0 auto;
     text-align: center;
+    line-height: 18px;
   }
 
   .story__container {
@@ -78,11 +216,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .story {
+    padding-top: 92px;
+  }
+
   .story__form {
     display: flex;
     flex-direction: column;
 
     @include tablet-center;
+  }
+
+  .story__promo {
+    width: 490px;
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 71px;
   }
 
   .story__wrapper {
@@ -97,29 +246,166 @@
 
   .story__field--travelapp {
     order: 2;
+
+    margin-bottom: 51px;
+    padding-top: 44px;
+    padding-left: 59px;
+    padding-right: 59px;
+    padding-bottom: 11px;
+    background-color: #ffffff;
   }
 
   .story__field--contacts {
     order: 3;
+
+    width: 616px;
+    margin-bottom: 51px;
+    padding: 0;
+    padding-top: 31px;
+    padding-bottom: 26px;
+    background-color: #ffffff;
   }
 
   .story__field--achieves {
     order: 4;
+
+    margin-bottom: 46px;
+    padding-top: 38px;
+    padding-left: 59px;
+    padding-right: 59px;
+    padding-bottom: 11px;
+    background-color: #ffffff;
   }
 
   .story__field--emotions {
     order: 5;
+    width: 492px;
+    margin: 0;
+    margin-bottom: 67px;
+    padding: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 31px;
+    padding-bottom: 40px;
   }
 
   .story__container {
     display: flex;
     order: 6;
+  }
 
-    @include tablet-center;
+  .story__userinfo {
+    margin-bottom: 55px;
+  }
+
+  .story__userinfo p {
+    display: flex;
+    margin-bottom: 51px;
+  }
+
+  .story__sign-text {
+    margin-left: 0;
+    margin-right: 21px;
+    margin-bottom: 0;
+    margin-top: 20px;
+
+    &--forlegend {
+      padding-left: 25px;
+      padding-right: 26px;
+      text-align: center;
+    }
+
+    &--forcontacts {
+      margin: 0;
+      padding-left: 32px;
+      padding-right: 33px;
+      text-align: center;
+    }
+
+    &--foremotions {
+      margin: 0;
+      padding-left: 38px;
+      padding-right: 40px;
+      text-align: center;
+    }
+
+    &--contacts {
+      order: 1;
+
+      margin: 0;
+      margin-left: 18px;
+    }
+  }
+
+  .story__formfield {
+    flex-grow: 1;
+
+    &--contacts {
+      width: 496px;
+      margin-bottom: 10px;
+    }
+
+    &--textarea {
+      width: 452px;
+      height: 173px;
+      resize: none;
+    }
+  }
+
+  .story__checkitem {
+    padding-left: 58px;
+  }
+
+  .story__contacts-block {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-bottom: 29px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 62px;
+      background-color: #e5e5e5;
+      background-image: url("../../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .story__contacts-block--email {
+    &::after {
+      background-image: url("../../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .story__button {
+    width: 300px;
+    margin-right: 135px;
+  }
+
+  .story__notice {
+    margin: 0;
+    margin-top: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .story__promo {
+    width: 760px;
+    margin-bottom: 65px;
+  }
+
   .story__form {
     flex-direction: row;
     flex-wrap: wrap;
@@ -127,20 +413,101 @@
     @include desktop-center;
   }
 
+  .story__sign-text {
+    &--forlegend {
+      margin: 0;
+      padding: 0 20px;
+    }
+
+    &--forcontacts {
+      margin-right: 0;
+    }
+  }
+
   .story__field {
     width: 940px;
+
+    &--travelapp {
+      box-sizing: border-box;
+      width: 437px;
+      height: 314px;
+      margin: 0;
+      padding-left: 75px;
+      padding-right: 0;
+    }
+
+    &--contacts {
+      padding-bottom: 12px;
+    }
+
+    &--achieves {
+      margin-bottom: 51px;
+    }
+
+    &--emotions {
+      margin-bottom: 65px;
+    }
+  }
+
+  .story__formfield {
+    &--textarea {
+      width: 772px;
+      height: 105px;
+    }
+  }
+
+  .story__container--desktop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 820px;
+    margin: 0 auto;
   }
 
   .story__userinfo {
     width: 433px;
     margin-right: 70px;
+    padding-top: 18px;
   }
 
-  .story__field--travelapp {
-    width: 431px;
+  .story__contacts-block {
+    width: 371px;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .story__checkitem {
+    &--sunbath {
+      order: 1;
+    }
+
+    &--souvenirs {
+      order: 2;
+    }
+
+    &--hotel {
+      order: 3;
+    }
   }
 
   .story__container {
     @include desktop-center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .story__hiddentext--footer {
+    display: inline;
+  }
+
+  .story__notice {
+    width: 315px;
+  }
+
+  .story__button {
+    margin: 0;
   }
 }
